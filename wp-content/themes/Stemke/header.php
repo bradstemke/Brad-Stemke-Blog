@@ -32,7 +32,6 @@
 
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 		<!-- end of wordpress head -->
 
 		<!-- drop Google Analytics Here -->
@@ -49,8 +48,8 @@
 				<div id="inner-header" class="wrap clearfix">
 
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
-					<img src="<?php echo get_template_directory_uri(); ?>/library/images/wcradio.jpg" alt="radio" class="last" />
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+					
+					<a href="<?php echo home_url(); ?>" rel="nofollow" class="h1"><?php bloginfo('name'); ?></a>
 
 					<!-- if you'd like to use the site description you can un-comment it below -->
 					<?php // bloginfo('description'); ?>

@@ -32,7 +32,7 @@ HEADER STYLES
 *********************/
 
 .header {
-	margin: 0px;
+	margin-top: 50px;
 }
 
 	#logo {
@@ -43,8 +43,8 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	background: #eee;
-	border: 0;
+	background: #fff;
+	border-top: 1px solid #000;
 
 	li {
 		float: left;
@@ -58,7 +58,7 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				background-color: #dedede;
+				text-decoration: underline;
 
 			}
 		}
@@ -72,8 +72,6 @@ NAVIGATION STYLES
 		ul.sub-menu,
 		ul.children {
 			margin-top: 0;
-			border: 1px solid #ccc;
-			border-top: 0;
 			position: absolute;
 			display: none;
 			z-index: 8999;

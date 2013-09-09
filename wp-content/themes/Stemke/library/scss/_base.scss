@@ -110,7 +110,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $sans-serif;
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight: 700;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -124,7 +124,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 
 h1, .h1 {
 	font-size: 4em;
-	line-height: 1.333em;
+	line-height: 1em;
 }
 
 h2, .h2 {
@@ -157,6 +157,9 @@ HEADER STYLES
 
 	#logo {}
 
+.inner-header {
+
+}
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -170,7 +173,6 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
 	border-bottom: 0;
 
 	li {
@@ -179,8 +181,6 @@ and more scalable.
 			display: block;
 			text-decoration: none;
 			padding: 10px 10px;
-			background-color: #eee;
-			border-bottom: 1px solid #ccc;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
