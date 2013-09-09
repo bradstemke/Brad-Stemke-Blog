@@ -31,9 +31,12 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+	margin: 0px;
+}
 
-	#logo {}
+	#logo {
+	}
 
 /*********************
 NAVIGATION STYLES
@@ -141,7 +144,7 @@ SIDEBARS & ASIDES
 }
 
 	.widgettitle {
-		border-bottom: 2px solid #444;
+		border-bottom: 1px solid #444;
 		margin-bottom: 0.75em;
 	}
 
