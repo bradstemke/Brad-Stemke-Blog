@@ -44,11 +44,12 @@ NAVIGATION STYLES
 
 .nav {
 	background: #fff;
-	border-top: 1px solid #000;
+	// border-top: 1px solid #000;
 
 	li {
 		float: left;
 		position: relative;
+		padding: 5px;
 
 		a {
 			border-bottom: 0;
@@ -57,8 +58,8 @@ NAVIGATION STYLES
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
-			&:hover, &:focus {
-				text-decoration: underline;
+			&:hover:before, &:hover:after, &:focus {
+				content: ".";
 
 			}
 		}

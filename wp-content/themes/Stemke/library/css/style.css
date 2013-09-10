@@ -1316,13 +1316,13 @@ you can add resource intensive styles.
   *********************/
   .nav {
     background: #fff;
-    border-top: 1px solid #000;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
     .nav li {
       float: left;
       position: relative;
+      padding: 5px;
       /*
       plan your menus and drop-downs wisely.
       */
@@ -1333,8 +1333,8 @@ you can add resource intensive styles.
         you can use hover styles here even though this size
         has the possibility of being a mobile device.
         */ }
-        .nav li a:hover, .nav li a:focus {
-          text-decoration: underline; }
+        .nav li a:hover:before, .nav li a:hover:after, .nav li a:focus {
+          content: "."; }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
