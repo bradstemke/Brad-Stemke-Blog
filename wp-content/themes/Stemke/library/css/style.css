@@ -469,8 +469,8 @@ dd {
   list-style: none; }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Brad Stemke Blog
+Author: Brad Stemke
 
 Stylesheet: Mixins & Constants Stylesheet
 
@@ -689,8 +689,8 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Brad Stemke
+Author: Brad Stemke
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -766,7 +766,7 @@ a, a:visited {
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #2d2d2d;
+    color: #c4c4c4;
     text-decoration: none; }
   a:link, a:visited:link {
     /*
@@ -801,7 +801,7 @@ h2, .h2 {
   margin-bottom: 0.375em; }
 
 h3, .h3 {
-  font-size: 1.125em; }
+  font-size: 2.25em; }
 
 h4, .h4 {
   font-size: 1.1em;
@@ -816,6 +816,9 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
+#inner-header {
+  border-bottom: 1px solid black; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -857,9 +860,6 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-#content {
-  margin-top: 2.2em; }
-
 /* end .hentry */
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
@@ -872,16 +872,20 @@ POSTS & CONTENT STYLES
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
-  color: #999; }
+  color: #c4c4c4; }
 
 /* entry content */
 .entry-content {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
   /*
   image alignment on a screen this size may be
   a bit difficult. It's set to start aligning
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
   */ }
+  .entry-content a {
+    font-weight: bold; }
   .entry-content dd {
     margin-left: 0;
     font-size: 0.9em;
@@ -1210,8 +1214,8 @@ you can add resource intensive styles.
 */
 @media only screen and (min-width: 768px) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: Brad Stemke
+  Author: Brad Stemke
   
   Stylesheet: Grid Stylesheet
   
@@ -1291,8 +1295,8 @@ you can add resource intensive styles.
     float: right; }
 
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: Brad Stemke Blog
+  Author: Brad Stemke
   
   Stylesheet: Tablet & Small Desktop Stylesheet
   
@@ -1316,7 +1320,13 @@ you can add resource intensive styles.
   HEADER STYLES
   *********************/
   .header {
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-bottom: 50px; }
+
+  #inner-header {
+    border-bottom: 1px solid black; }
+    #inner-header a {
+      display: inline; }
 
   /*********************
   NAVIGATION STYLES
@@ -1352,8 +1362,12 @@ you can add resource intensive styles.
     -moz-transform: translateX(0px);
     transform: translateX(0px); }
 
+  nav {
+    display: inline; }
+
   .nav {
     background: #fff;
+    float: right;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
@@ -1371,6 +1385,8 @@ you can add resource intensive styles.
         you can use hover styles here even though this size
         has the possibility of being a mobile device.
         */ }
+        .nav li a:hover:before, .nav li a:hover:after, .nav li a:focus, .nav li a:hover {
+          color: #444; }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;

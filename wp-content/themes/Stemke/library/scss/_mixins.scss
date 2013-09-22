@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Brad Stemke Blog
+Author: Brad Stemke
 
 Stylesheet: Mixins & Constants Stylesheet
 
@@ -63,7 +63,7 @@ $bones-pink:        #f01d4f;
 $bones-blue:        #1990db;
 
 $link-color:        #444;
-$link-hover:        darken($link-color, 9%);
+$link-hover:        lighten($link-color, 50%);
 
 /*
 Here's a great tutorial on how to

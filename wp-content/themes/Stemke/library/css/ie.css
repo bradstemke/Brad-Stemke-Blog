@@ -18,8 +18,8 @@ import the mixins file so SASS can understand the variables.
 */
 /* import mixins */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Brad Stemke Blog
+Author: Brad Stemke
 
 Stylesheet: Mixins & Constants Stylesheet
 
@@ -232,8 +232,8 @@ BUTTONS
     background-image: linear-gradient(to bottom, #1681c4, #1990db); }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Brad Stemke
+Author: Brad Stemke
 
 Stylesheet: Grid Stylesheet
 
@@ -379,8 +379,8 @@ do they need tweaking?
 */
 /* end .footer-links */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Brad Stemke Blog
+Author: Brad Stemke
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -404,7 +404,13 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 .header {
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+#inner-header {
+  border-bottom: 1px solid black; }
+  #inner-header a {
+    display: inline; }
 
 /*********************
 NAVIGATION STYLES
@@ -440,8 +446,12 @@ NAVIGATION STYLES
   -moz-transform: translateX(0px);
   transform: translateX(0px); }
 
+nav {
+  display: inline; }
+
 .nav {
   background: #fff;
+  float: right;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */ }
@@ -459,6 +469,8 @@ NAVIGATION STYLES
       you can use hover styles here even though this size
       has the possibility of being a mobile device.
       */ }
+      .nav li a:hover:before, .nav li a:hover:after, .nav li a:focus, .nav li a:hover {
+        color: #444; }
     .nav li ul.sub-menu,
     .nav li ul.children {
       margin-top: 0;

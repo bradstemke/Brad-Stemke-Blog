@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Brad Stemke Blog
+Author: Brad Stemke
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -33,11 +33,18 @@ HEADER STYLES
 
 .header {
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 	#logo {
 	}
 
+	#inner-header {
+		border-bottom: 1px solid $black;
+		a {
+			display: inline;
+		}
+	}
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -76,9 +83,13 @@ NAVIGATION STYLES
 	transform: translateX(0px);
 }
 
+nav {
+	display: inline;
+}
 
 .nav {
 	background: #fff;
+	float: right;
 	// border-top: 1px solid #000;
 
 	li {
@@ -93,9 +104,8 @@ NAVIGATION STYLES
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
-			&:hover:before, &:hover:after, &:focus {
-				
-
+			&:hover:before, &:hover:after, &:focus, &:hover {
+				color: #444;
 			}
 		}
 
