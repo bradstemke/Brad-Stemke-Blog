@@ -76,16 +76,28 @@ http://sachagreif.com/sass-color-variables/
 TYPOGRAPHY
 *********************/
 
-$sans-serif:        "franchiseregular", Arial, sans-serif;
+$sans-serif:        "anonymous_proregular", Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
 
 @font-face {
-    font-family: 'franchiseregular';
-    src: url('library/fonts/franchise-bold-webfont.eot');
-    src: url('library/fonts/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('library/fonts/franchise-bold-webfont.woff') format('woff'),
-         url('library/fonts/franchise-bold-webfont.ttf') format('truetype'),
-         url('library/fonts/franchise-bold-webfont.svg#franchiseregular') format('svg');
+    font-family: 'anonymous_proregular';
+    src: url('library/fonts/anonymous_pro-webfont.eot');
+    src: url('library/fonts/anonymous_pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('library/fonts/anonymous_pro-webfont.woff') format('woff'),
+         url('library/fonts/anonymous_pro-webfont.ttf') format('truetype'),
+         url('library/fonts/anonymous_pro-webfont.svg#anonymous_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'anonymous_probold';
+    src: url('library/fonts/anonymous_pro_b-webfont.eot');
+    src: url('library/fonts/anonymous_pro_b-webfont.eot?#iefix') format('embedded-opentype'),
+         url('library/fonts/anonymous_pro_b-webfont.woff') format('woff'),
+         url('library/fonts/anonymous_pro_b-webfont.ttf') format('truetype'),
+         url('library/fonts/anonymous_pro_b-webfont.svg#anonymous_probold') format('svg');
     font-weight: normal;
     font-style: normal;
 
