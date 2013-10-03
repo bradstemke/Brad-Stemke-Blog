@@ -259,26 +259,43 @@ POSTS & CONTENT STYLES
 }
 
 		.hentry {
-			
+
 			header {
 				background-color: rgba($nice-blue, 0.7);
+				p {
+					padding-left: 1em;
+				}
 			}
-			.article-header h1 {
+			.article-header  {
+				h1 {
+					padding-left: 0.25em;
+				}
+				h2, a {
+					padding-left: 0.25em;
+				}
+			}
+			.byline p {
 				padding-left: 0.25em;
 			}
+
 			footer {}
 
 		} /* end .hentry */
 
 		.single-title,
-		.page-title {
+		.page-title  {
 		}
+
 
 		.single-title {}
 
 		.page-title {}
 
-		.archive-title { }
+		.archive-title {
+			span {
+				padding-left: 0.25em;
+			}
+		}
 
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
@@ -293,7 +310,6 @@ POSTS & CONTENT STYLES
 		/* post meta */
 		.byline {
 			color: $link-color;
-
 			time {}
 		}
 
