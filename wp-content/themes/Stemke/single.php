@@ -4,7 +4,7 @@
 
 				<div id="inner-content" class="wrap clearfix">
 
-					<div id="main" class="eightcol first clearfix" role="main">
+					<div id="main" class="twelvecol first clearfix" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -13,14 +13,15 @@
 								<header class="article-header">
 
 									<h2 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h2>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> <span class="amp">&amp;</span> filed under %4$s.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', ') );
-									?></p>
-
+	
 								</header> <!-- end article header -->
 
 								<section class="entry-content clearfix" itemprop="articleBody">
 									<?php the_content(); ?>
+									<p class="byline vcard"><?php
+										printf( __( '// <time class="updated" datetime="%1$s" pubdate>%2$s</time> // %4$s', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
+									?></p>
+
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
@@ -52,7 +53,7 @@
 
 					</div> <!-- end #main -->
 
-					<?php get_sidebar(); ?>
+					<?php //get_sidebar(); ?>
 
 				</div> <!-- end #inner-content -->
 

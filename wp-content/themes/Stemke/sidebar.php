@@ -2,7 +2,7 @@
 
 					<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 						
-						<img src="<?php echo get_template_directory_uri(); ?>/library/images/wcradio.jpg" alt="radio" />
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/wcradio-png.png" alt="radio" />
 
 						<?php dynamic_sidebar( 'sidebar1' ); ?>
 

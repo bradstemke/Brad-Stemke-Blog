@@ -25,6 +25,9 @@ LAYOUT & GRID STYLES
 
 .wrap {
 	max-width: 1140px;
+	width: 65%;
+	margin: 0 auto;
+
 }
 
 /*********************
@@ -32,15 +35,15 @@ HEADER STYLES
 *********************/
 
 .header {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding: 50px 0px;
+	border-bottom: 3px solid darken($nice-blue, 25%);
 }
 
 	#logo {
 	}
 
 	#inner-header {
-		border-bottom: 1px solid $black;
+
 		a {
 			display: inline;
 		}
@@ -88,7 +91,7 @@ nav {
 }
 
 .nav {
-	background: #fff;
+	background: rgba($nice-blue, 0);
 	float: right;
 	// border-top: 1px solid #000;
 
@@ -311,6 +314,11 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
+
+.footer section img {
+	text-align: center;
+}
+
 .footer-links {
 	ul {
 		li {

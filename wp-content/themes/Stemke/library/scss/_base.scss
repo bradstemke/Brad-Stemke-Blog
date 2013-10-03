@@ -20,7 +20,7 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: #565656;
-	background-color: $white;
+	background-color: $nice-blue;
 }
 
 /********************
@@ -69,7 +69,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -83,7 +83,7 @@ a, a:visited {
 
 	/* on hover */
 	&:hover, &:focus {
-		color: $link-hover;
+		color: darken($link-color, 100%);
 		text-decoration: none;
 	}
 
@@ -131,6 +131,8 @@ h2, .h2 {
 	font-size: 2.75em;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
+	background-color: rgba($nice-blue, 0.7);
+	border-bottom: 3px solid darken($nice-blue, 25%);
 }
 
 h3, .h3 {
@@ -149,18 +151,22 @@ h5, .h5 {
 	letter-spacing: 2px;
 }
 
+p {
+	margin-top: 0em;
+}
+
 /*********************
 HEADER STYLES
 *********************/
 
 .header {
-
+	background-color: rgba($nice-blue, 0.7);
 }
 
 	#logo {}
 
 #inner-header {
-	border-bottom: 1px solid $black;
+
 }
 /*********************
 NAVIGATION STYLES
@@ -248,19 +254,25 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-
+	background: url(../images/squairy_light.png) repeat;
+	padding-bottom: 2em;
 }
 
 		.hentry {
-
-			header {}
-
+			
+			header {
+				background-color: rgba($nice-blue, 0.7);
+			}
+			.article-header h1 {
+				padding-left: 0.25em;
+			}
 			footer {}
 
 		} /* end .hentry */
 
 		.single-title,
-		.page-title {}
+		.page-title {
+		}
 
 		.single-title {}
 
@@ -280,15 +292,16 @@ POSTS & CONTENT STYLES
 
 		/* post meta */
 		.byline {
-			color: $link-hover;
+			color: $link-color;
 
 			time {}
 		}
 
 		/* entry content */
 		.entry-content {
-			padding-bottom: 10px;
-			border-bottom: 1px solid $black;
+			padding: 1em;
+			background-color: rgba($nice-blue, 0.7);
+			border-bottom: 3px solid darken($nice-blue, 25%);
 			a {
 				font-weight: bold;
 			}
@@ -771,6 +784,8 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
+	background-color: rgba($nice-blue, 0.7);
+	margin: 25px 0px;
 }
 
 	/*

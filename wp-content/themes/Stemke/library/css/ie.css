@@ -36,26 +36,36 @@ remember less is more.
 /*********************
 CLEARFIXIN'
 *********************/
+/* line 23, ../scss/_mixins.scss */
 .clearfix {
-  zoom: 1; }
-  .clearfix:before, .clearfix:after {
-    content: "";
-    display: table; }
-  .clearfix:after {
-    clear: both; }
+  zoom: 1;
+}
+/* line 25, ../scss/_mixins.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 26, ../scss/_mixins.scss */
+.clearfix:after {
+  clear: both;
+}
 
 /*********************
 TOOLS
 *********************/
+/* line 34, ../scss/_mixins.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
+/* line 41, ../scss/_mixins.scss */
 .image-replacement {
   text-indent: 100%;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /*********************
 COLORS
@@ -75,14 +85,16 @@ TYPOGRAPHY
   src: url("library/fonts/anonymous_pro-webfont.eot");
   src: url("library/fonts/anonymous_pro-webfont.eot?#iefix") format("embedded-opentype"), url("library/fonts/anonymous_pro-webfont.woff") format("woff"), url("library/fonts/anonymous_pro-webfont.ttf") format("truetype"), url("library/fonts/anonymous_pro-webfont.svg#anonymous_proregular") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'anonymous_probold';
   src: url("library/fonts/anonymous_pro_b-webfont.eot");
   src: url("library/fonts/anonymous_pro_b-webfont.eot?#iefix") format("embedded-opentype"), url("library/fonts/anonymous_pro_b-webfont.woff") format("woff"), url("library/fonts/anonymous_pro_b-webfont.ttf") format("truetype"), url("library/fonts/anonymous_pro_b-webfont.svg#anonymous_probold") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 /* 	To embed your own fonts, use this syntax
 	and place your fonts inside the
@@ -106,39 +118,57 @@ TYPOGRAPHY
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
+/* line 132, ../scss/_mixins.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
-  font-style: italic; }
+  font-style: italic;
+}
 
+/* line 138, ../scss/_mixins.scss */
 .text-left {
-  text-align: left; }
+  text-align: left;
+}
 
+/* line 139, ../scss/_mixins.scss */
 .text-center {
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 140, ../scss/_mixins.scss */
 .text-right {
-  text-align: right; }
+  text-align: right;
+}
 
+/* line 144, ../scss/_mixins.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
-  border: 1px solid; }
+  border: 1px solid;
+}
 
+/* line 150, ../scss/_mixins.scss */
 .alert-help {
   border-color: #e8dc59;
-  background: #ebe16f; }
+  background: #ebe16f;
+}
 
+/* line 156, ../scss/_mixins.scss */
 .alert-info {
   border-color: #bfe4f4;
-  background: #d5edf8; }
+  background: #d5edf8;
+}
 
+/* line 162, ../scss/_mixins.scss */
 .alert-error {
   border-color: #f8cdce;
-  background: #fbe3e4; }
+  background: #fbe3e4;
+}
 
+/* line 168, ../scss/_mixins.scss */
 .alert-success {
   border-color: #deeaae;
-  background: #e6efc2; }
+  background: #e6efc2;
+}
 
 /*********************
 TRANSITION
@@ -164,6 +194,7 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
+/* line 230, ../scss/_mixins.scss */
 .button, .button:visited {
   font-family: "anonymous_proregular", Arial, sans-serif;
   border: 1px solid #232323;
@@ -185,26 +216,32 @@ BUTTONS
   background-image: -webkit-linear-gradient(top, #444444, #373737);
   background-image: -moz-linear-gradient(top, #444444, #373737);
   background-image: -o-linear-gradient(top, #444444, #373737);
-  background-image: linear-gradient(to bottom, #444444, #373737); }
-  .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
-    color: white;
-    border: 1px solid #232323;
-    border-top-color: #111111;
-    border-left-color: #111111;
-    background-color: #2b2b2b;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#373737), to(#2b2b2b));
-    background-image: -webkit-linear-gradient(top, #373737, #2b2b2b);
-    background-image: -moz-linear-gradient(top, #373737, #2b2b2b);
-    background-image: -o-linear-gradient(top, #373737, #2b2b2b);
-    background-image: linear-gradient(to bottom, #373737, #2b2b2b); }
-  .button:active, .button:visited:active {
-    background-color: #444444;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#373737), to(#444444));
-    background-image: -webkit-linear-gradient(top, #373737, #444444);
-    background-image: -moz-linear-gradient(top, #373737, #444444);
-    background-image: -o-linear-gradient(top, #373737, #444444);
-    background-image: linear-gradient(to bottom, #373737, #444444); }
+  background-image: linear-gradient(to bottom, #444444, #373737);
+}
+/* line 249, ../scss/_mixins.scss */
+.button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
+  color: white;
+  border: 1px solid #232323;
+  border-top-color: #111111;
+  border-left-color: #111111;
+  background-color: #2b2b2b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#373737), to(#2b2b2b));
+  background-image: -webkit-linear-gradient(top, #373737, #2b2b2b);
+  background-image: -moz-linear-gradient(top, #373737, #2b2b2b);
+  background-image: -o-linear-gradient(top, #373737, #2b2b2b);
+  background-image: linear-gradient(to bottom, #373737, #2b2b2b);
+}
+/* line 257, ../scss/_mixins.scss */
+.button:active, .button:visited:active {
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#373737), to(#444444));
+  background-image: -webkit-linear-gradient(top, #373737, #444444);
+  background-image: -moz-linear-gradient(top, #373737, #444444);
+  background-image: -o-linear-gradient(top, #373737, #444444);
+  background-image: linear-gradient(to bottom, #373737, #444444);
+}
 
+/* line 262, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
@@ -214,22 +251,27 @@ BUTTONS
   background-image: -moz-linear-gradient(top, #1990db, #1681c4);
   background-image: -o-linear-gradient(top, #1990db, #1681c4);
   background-image: linear-gradient(to bottom, #1990db, #1681c4);
-  box-shadow: inset 0 0 3px #59b3ec; }
-  .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
-    border-color: #116396;
-    background-color: #1472ad;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
-    background-image: -webkit-linear-gradient(top, #1784c9, #1472ad);
-    background-image: -moz-linear-gradient(top, #1784c9, #1472ad);
-    background-image: -o-linear-gradient(top, #1784c9, #1472ad);
-    background-image: linear-gradient(to bottom, #1784c9, #1472ad); }
-  .blue-button:active, .blue-button:visited:active {
-    background-color: #1990db;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
-    background-image: -webkit-linear-gradient(top, #1681c4, #1990db);
-    background-image: -moz-linear-gradient(top, #1681c4, #1990db);
-    background-image: -o-linear-gradient(top, #1681c4, #1990db);
-    background-image: linear-gradient(to bottom, #1681c4, #1990db); }
+  box-shadow: inset 0 0 3px #59b3ec;
+}
+/* line 268, ../scss/_mixins.scss */
+.blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
+  border-color: #116396;
+  background-color: #1472ad;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
+  background-image: -webkit-linear-gradient(top, #1784c9, #1472ad);
+  background-image: -moz-linear-gradient(top, #1784c9, #1472ad);
+  background-image: -o-linear-gradient(top, #1784c9, #1472ad);
+  background-image: linear-gradient(to bottom, #1784c9, #1472ad);
+}
+/* line 272, ../scss/_mixins.scss */
+.blue-button:active, .blue-button:visited:active {
+  background-color: #1990db;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
+  background-image: -webkit-linear-gradient(top, #1681c4, #1990db);
+  background-image: -moz-linear-gradient(top, #1681c4, #1990db);
+  background-image: -o-linear-gradient(top, #1681c4, #1990db);
+  background-image: linear-gradient(to bottom, #1681c4, #1990db);
+}
 
 /******************************************************************
 Site Name: Brad Stemke
@@ -253,64 +295,94 @@ together, let's see how this works out. If you want to use 1140, the original
 values are commented out on each line.
 
 ******************************************************************/
+/* line 24, ../scss/_grid.scss */
 .onecol {
-  width: 5.801104972%; }
+  width: 5.801104972%;
+}
 
 /* 4.85%;  } /* grid_1  */
+/* line 25, ../scss/_grid.scss */
 .twocol {
-  width: 14.364640883%; }
+  width: 14.364640883%;
+}
 
 /* 13.45%; } /* grid_2  */
+/* line 26, ../scss/_grid.scss */
 .threecol {
-  width: 22.928176794%; }
+  width: 22.928176794%;
+}
 
 /* 22.05%; } /* grid_3  */
+/* line 27, ../scss/_grid.scss */
 .fourcol {
-  width: 31.491712705%; }
+  width: 31.491712705%;
+}
 
 /* 30.75%; } /* grid_4  */
+/* line 28, ../scss/_grid.scss */
 .fivecol {
-  width: 40.055248616%; }
+  width: 40.055248616%;
+}
 
 /* 39.45%; } /* grid_5  */
+/* line 29, ../scss/_grid.scss */
 .sixcol {
-  width: 48.618784527%; }
+  width: 48.618784527%;
+}
 
 /* 48%;    } /* grid_6  */
+/* line 30, ../scss/_grid.scss */
 .sevencol {
-  width: 57.182320438000005%; }
+  width: 57.182320438000005%;
+}
 
 /* 56.75%; } /* grid_7  */
+/* line 31, ../scss/_grid.scss */
 .eightcol {
-  width: 65.74585634900001%; }
+  width: 65.74585634900001%;
+}
 
 /* 65.4%;  } /* grid_8  */
+/* line 32, ../scss/_grid.scss */
 .ninecol {
-  width: 74.30939226%; }
+  width: 74.30939226%;
+}
 
 /* 74.05%; } /* grid_9  */
+/* line 33, ../scss/_grid.scss */
 .tencol {
-  width: 82.87292817100001%; }
+  width: 82.87292817100001%;
+}
 
 /* 82.7%;  } /* grid_10 */
+/* line 34, ../scss/_grid.scss */
 .elevencol {
-  width: 91.436464082%; }
+  width: 91.436464082%;
+}
 
 /* 91.35%; } /* grid_11 */
+/* line 35, ../scss/_grid.scss */
 .twelvecol {
-  width: 99.999999993%; }
+  width: 99.999999993%;
+}
 
 /* 100%;   } /* grid_12 */
+/* line 38, ../scss/_grid.scss */
 .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
   position: relative;
   float: left;
-  margin-left: 2.762430939%; }
+  margin-left: 2.762430939%;
+}
 
+/* line 44, ../scss/_grid.scss */
 .first {
-  margin-left: 0; }
+  margin-left: 0;
+}
 
+/* line 48, ../scss/_grid.scss */
 .last {
-  float: right; }
+  float: right;
+}
 
 /******************************************************************
 Site Name: 
@@ -332,42 +404,58 @@ upon your base.scss styles.
 NAVIGATION STYLES
 *********************/
 /* .menu is clearfixed inside mixins.scss */
+/* line 27, ../scss/_481up.scss */
 .menu {
-  /* end .menu ul */ }
-  .menu ul {
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */ }
-    .menu ul li {
-      /*
-      plan your menus and drop-downs wisely.
-      */ }
-      .menu ul li a {
-        /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
+  /* end .menu ul */
+}
+/* line 28, ../scss/_481up.scss */
+.menu ul {
+  /* end .menu ul li */
+  /* highlight current page */
+  /* end current highlighters */
+}
+/* line 29, ../scss/_481up.scss */
+.menu ul li {
+  /*
+  plan your menus and drop-downs wisely.
+  */
+}
+/* line 30, ../scss/_481up.scss */
+.menu ul li a {
+  /*
+  you can use hover styles here even though this size
+  has the possibility of being a mobile device.
+  */
+}
 
 /* end .menu */
 /*********************
 POSTS & CONTENT STYLES
 *********************/
 /* entry content */
+/* line 75, ../scss/_481up.scss */
 .entry-content {
-  /* at this larger size, we can start to align images */ }
-  .entry-content .alignleft, .entry-content img.alignleft {
-    margin-right: 1.5em;
-    display: inline;
-    float: left; }
-  .entry-content .alignright, .entry-content img.alignright {
-    margin-left: 1.5em;
-    display: inline;
-    float: right; }
-  .entry-content .aligncenter, .entry-content img.aligncenter {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    clear: both; }
+  /* at this larger size, we can start to align images */
+}
+/* line 79, ../scss/_481up.scss */
+.entry-content .alignleft, .entry-content img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+}
+/* line 84, ../scss/_481up.scss */
+.entry-content .alignright, .entry-content img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+}
+/* line 89, ../scss/_481up.scss */
+.entry-content .aligncenter, .entry-content img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+}
 
 /* end .entry-content */
 /*********************
@@ -397,46 +485,59 @@ GENERAL STYLES
 /*********************
 LAYOUT & GRID STYLES
 *********************/
+/* line 26, ../scss/_768up.scss */
 .wrap {
-  max-width: 1140px; }
+  max-width: 1140px;
+  width: 65%;
+  margin: 0 auto;
+}
 
 /*********************
 HEADER STYLES
 *********************/
+/* line 37, ../scss/_768up.scss */
 .header {
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  padding: 50px 0px;
+  border-bottom: 3px solid #56cce3;
+}
 
-#inner-header {
-  border-bottom: 1px solid black; }
-  #inner-header a {
-    display: inline; }
+/* line 47, ../scss/_768up.scss */
+#inner-header a {
+  display: inline;
+}
 
 /*********************
 NAVIGATION STYLES
 *********************/
+/* line 55, ../scss/_768up.scss */
 .hover-effect a::before,
 .hover-effect a::after {
   display: inline-block;
   opacity: 0;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
   -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-  transition: transform 0.3s, opacity 0.2s; }
+  transition: transform 0.3s, opacity 0.2s;
+}
 
+/* line 63, ../scss/_768up.scss */
 .hover-effect a::before {
   margin-right: 10px;
   content: '[';
   -webkit-transform: translateX(20px);
   -moz-transform: translateX(20px);
-  transform: translateX(20px); }
+  transform: translateX(20px);
+}
 
+/* line 71, ../scss/_768up.scss */
 .hover-effect a::after {
   margin-left: 10px;
   content: ']';
   -webkit-transform: translateX(-20px);
   -moz-transform: translateX(-20px);
-  transform: translateX(-20px); }
+  transform: translateX(-20px);
+}
 
+/* line 82, ../scss/_768up.scss */
 .hover-effect a:hover::before,
 .hover-effect a:hover::after,
 .hover-effect a:focus::before,
@@ -444,81 +545,112 @@ NAVIGATION STYLES
   opacity: 1;
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
-  transform: translateX(0px); }
+  transform: translateX(0px);
+}
 
+/* line 89, ../scss/_768up.scss */
 nav {
-  display: inline; }
+  display: inline;
+}
 
+/* line 93, ../scss/_768up.scss */
 .nav {
-  background: #fff;
+  background: rgba(195, 237, 245, 0);
   float: right;
   /* end .menu ul li */
   /* highlight current page */
-  /* end current highlighters */ }
-  .nav li {
-    float: left;
-    position: relative;
-    padding: 5px;
-    /*
-    plan your menus and drop-downs wisely.
-    */
-    /* showing sub-menus */ }
-    .nav li a {
-      border-bottom: 0;
-      /*
-      you can use hover styles here even though this size
-      has the possibility of being a mobile device.
-      */ }
-      .nav li a:hover:before, .nav li a:hover:after, .nav li a:focus, .nav li a:hover {
-        color: #444; }
-    .nav li ul.sub-menu,
-    .nav li ul.children {
-      margin-top: 0;
-      position: absolute;
-      display: none;
-      z-index: 8999;
-      /* highlight sub-menu current page */ }
-      .nav li ul.sub-menu li,
-      .nav li ul.children li {
-        /*
-        if you need to go deeper, go nuts
-        just remember deeper menus suck
-        for usability. k, bai.
-        */ }
-        .nav li ul.sub-menu li a,
-        .nav li ul.children li a {
-          padding-left: 10px;
-          border-right: 0;
-          display: block;
-          width: 180px;
-          border-bottom: 1px solid #ccc; }
-        .nav li ul.sub-menu li:last-child a,
-        .nav li ul.children li:last-child a {
-          border-bottom: 0; }
-    .nav li:hover ul {
-      top: auto;
-      display: block; }
+  /* end current highlighters */
+}
+/* line 98, ../scss/_768up.scss */
+.nav li {
+  float: left;
+  position: relative;
+  padding: 5px;
+  /*
+  plan your menus and drop-downs wisely.
+  */
+  /* showing sub-menus */
+}
+/* line 103, ../scss/_768up.scss */
+.nav li a {
+  border-bottom: 0;
+  /*
+  you can use hover styles here even though this size
+  has the possibility of being a mobile device.
+  */
+}
+/* line 110, ../scss/_768up.scss */
+.nav li a:hover:before, .nav li a:hover:after, .nav li a:focus, .nav li a:hover {
+  color: #444;
+}
+/* line 122, ../scss/_768up.scss */
+.nav li ul.sub-menu,
+.nav li ul.children {
+  margin-top: 0;
+  position: absolute;
+  display: none;
+  z-index: 8999;
+  /* highlight sub-menu current page */
+}
+/* line 128, ../scss/_768up.scss */
+.nav li ul.sub-menu li,
+.nav li ul.children li {
+  /*
+  if you need to go deeper, go nuts
+  just remember deeper menus suck
+  for usability. k, bai.
+  */
+}
+/* line 130, ../scss/_768up.scss */
+.nav li ul.sub-menu li a,
+.nav li ul.children li a {
+  padding-left: 10px;
+  border-right: 0;
+  display: block;
+  width: 180px;
+  border-bottom: 1px solid #ccc;
+}
+/* line 147, ../scss/_768up.scss */
+.nav li ul.sub-menu li:last-child a,
+.nav li ul.children li:last-child a {
+  border-bottom: 0;
+}
+/* line 169, ../scss/_768up.scss */
+.nav li:hover ul {
+  top: auto;
+  display: block;
+}
 
 /* end .nav */
 /*********************
 SIDEBARS & ASIDES
 *********************/
+/* line 189, ../scss/_768up.scss */
 .sidebar {
-  margin-top: 2.2em; }
+  margin-top: 2.2em;
+}
 
+/* line 193, ../scss/_768up.scss */
 .widgettitle {
   border-bottom: 1px solid #444;
-  margin-bottom: 0.75em; }
+  margin-bottom: 0.75em;
+}
 
+/* line 198, ../scss/_768up.scss */
 .widget {
   padding: 0 10px;
-  margin: 2.2em 0; }
-  .widget ul li {
-    margin-bottom: 0.75em;
-    /* deep nesting */ }
-    .widget ul li ul {
-      margin-top: 0.75em;
-      padding-left: 1em; }
+  margin: 2.2em 0;
+}
+/* line 203, ../scss/_768up.scss */
+.widget ul li {
+  margin-bottom: 0.75em;
+  /* deep nesting */
+}
+/* line 211, ../scss/_768up.scss */
+.widget ul li ul {
+  margin-top: 0.75em;
+  padding-left: 1em;
+}
 
 /* links widget */
 /* meta widget */
@@ -539,12 +671,19 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
+/* line 318, ../scss/_768up.scss */
+.footer section img {
+  text-align: center;
+}
+
+/* line 324, ../scss/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
   it's very rare to have multi-depth menus in
   the footer.
-  */ }
+  */
+}
 
 /* end .footer-links */
 /******************************************************************

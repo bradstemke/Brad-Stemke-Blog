@@ -4,7 +4,7 @@
 
 				<div id="inner-content" class="wrap clearfix">
 
-						<div id="main" class="ninecol first clearfix" role="main">
+						<div id="main" class="twelvecol first clearfix" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -13,19 +13,18 @@
 								<header class="article-header">
 
 									<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-									<p class="byline vcard"><?php
-										printf( __( '<time class="updated" datetime="%1$s" pubdate>%2$s</time> / %4$s', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
-									?></p>
 
 								</header> <!-- end article header -->
 
 								<section class="entry-content clearfix">
 									<?php the_content(); ?>
+									<p class="byline vcard"><?php
+										printf( __( '// <time class="updated" datetime="%1$s" pubdate>%2$s</time> // %4$s', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
+									?></p>
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
 									<p class="tags"><?php the_tags( '<span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '' ); ?></p>
-
 								</footer> <!-- end article footer -->
 
 								<?php // comments_template(); // uncomment if you want to use them ?>
@@ -63,7 +62,7 @@
 
 						</div> <!-- end #main -->
 
-						<?php get_sidebar(); ?>
+						<?php //get_sidebar(); ?>
 
 				</div> <!-- end #inner-content -->
 
