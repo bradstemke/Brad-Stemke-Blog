@@ -259,7 +259,9 @@ POSTS & CONTENT STYLES
 }
 
 		.hentry {
-
+			h1.h2 {
+				margin-bottom: 0em;
+			}
 			header {
 				background-color: rgba($nice-blue, 0.7);
 				p {
