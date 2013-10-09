@@ -17,7 +17,8 @@ come into play. Have fun!
 GENERAL STYLES
 *********************/
 
-body {}
+body {
+}
 
 /*********************
 LAYOUT & GRID STYLES
@@ -36,7 +37,6 @@ HEADER STYLES
 
 .header {
 	padding: 50px 0px;
-	border-bottom: 3px solid darken($nice-blue, 25%);
 }
 
 	#logo {

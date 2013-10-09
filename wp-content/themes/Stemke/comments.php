@@ -100,7 +100,7 @@ The comments page for Bones
 
 	<?php endif; ?>
 
-	<p><textarea name="comment" id="comment" placeholder="<?php _e( 'Your Comment here...', 'bonestheme' ); ?>" tabindex="4"></textarea></p>
+	<p><textarea name="comment" id="comment" placeholder="<?php _e( 'Have anything to add?', 'bonestheme' ); ?>" tabindex="4"></textarea></p>
 
 	<p>
 		<input name="submit" type="submit" id="submit" class="button" tabindex="5" value="<?php _e( 'Submit', 'bonestheme' ); ?>" />

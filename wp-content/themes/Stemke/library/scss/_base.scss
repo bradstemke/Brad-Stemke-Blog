@@ -20,7 +20,7 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: #565656;
-	background-color: $nice-blue;
+	background-color: $white;
 }
 
 /********************
@@ -83,7 +83,7 @@ a, a:visited {
 
 	/* on hover */
 	&:hover, &:focus {
-		color: darken($link-color, 100%);
+		color: lighten($link-color, 100%);
 		text-decoration: none;
 	}
 
@@ -110,7 +110,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $sans-serif;
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight: 700;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -132,7 +132,7 @@ h2, .h2 {
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
 	background-color: rgba($nice-blue, 0.7);
-	border-bottom: 3px solid darken($nice-blue, 25%);
+	border-bottom: 3px solid lighten($nice-blue, 25%);
 }
 
 h3, .h3 {
@@ -160,7 +160,8 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: rgba($nice-blue, 0.7);
+	background-color: $nice-blue;
+	border-bottom: 3px solid lighten($nice-blue, 25%);
 }
 
 	#logo {}
@@ -263,16 +264,13 @@ POSTS & CONTENT STYLES
 				margin-bottom: 0em;
 			}
 			header {
-				background-color: rgba($nice-blue, 0.7);
+				background-color: $nice-blue;
 				p {
 					padding-left: 1em;
 				}
 			}
 			.article-header  {
-				h1 {
-					padding-left: 0.25em;
-				}
-				h2, a {
+				h1, h2, h3 {
 					padding-left: 0.25em;
 				}
 			}
@@ -319,7 +317,7 @@ POSTS & CONTENT STYLES
 		.entry-content {
 			padding: 1em;
 			background-color: rgba($nice-blue, 0.7);
-			border-bottom: 3px solid darken($nice-blue, 25%);
+			border-bottom: 3px solid lighten($nice-blue, 25%);
 			a {
 				font-weight: bold;
 			}
@@ -681,7 +679,7 @@ COMMENT FORM STYLES
 ******************************************************************/
 
 .respond-form {
-	margin: 1.5em 10px;
+	margin: 1.5em 0;
 	padding-bottom: 2.2em;
 
 	form {
@@ -732,7 +730,7 @@ COMMENT FORM STYLES
 
 		textarea {
 			resize: none;
-			width: 97.3%;
+			width: 100%;
 			height: 150px;
 		}
 
@@ -802,8 +800,9 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background-color: rgba($nice-blue, 0.7);
-	margin: 25px 0px;
+	background-color: $white;
+	padding: 2em 0;
+	border-top: 3px solid lighten($nice-blue, 25%);
 }
 
 	/*

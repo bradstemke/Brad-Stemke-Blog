@@ -57,14 +57,14 @@ $alert-green:       #e6efc2;
 $alert-blue:        #d5edf8;
 
 $black:             #000;
-$white:             #fff;
+$white:             rgba(236, 240, 241,1.0);
 
 $bones-pink:        #f01d4f;
 $bones-blue:        #1990db;
 
 $link-color:        #444;
 $link-hover:        lighten($link-color, 50%);
-$nice-blue:         #C3EDF5;
+$nice-blue:         rgb(52, 152, 219);
 $tan:               #ECE5CE;
 
 /*
@@ -229,33 +229,33 @@ BUTTONS
 
 .button, .button:visited {
 	font-family: $sans-serif;
-	border: 1px solid darken($link-color, 13%);
-	border-top-color: darken($link-color, 7%);
-	border-left-color: darken($link-color, 7%);
-	padding: 4px 12px;
-	color: $white;
+	border-bottom: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+	padding: 8px 20px;
+	color: $link-color;
+  background-color: rgba($nice-blue, 0.7);
 	display: inline-block;
-	font-size: 11px;
+	font-size: 75%;
 	font-weight: bold;
 	text-decoration: none;
-	text-shadow: 0 1px rgba(0,0,0, .75);
 	cursor: pointer;
 	margin-bottom: 20px;
 	line-height: 21px;
-	border-radius: 4px;
-	@include css-gradient($link-color, darken($link-color, 5%));
-
+  -webkit-transition: all 500ms ease;  
+  -moz-transition: all 500ms ease;  
+  -o-transition: all 500ms ease;  
+  transition: all 500ms ease;  
 
 	&:hover, &:focus {
-		color: $white;
-	  	border: 1px solid darken($link-color, 13%);
-	  	border-top-color: darken($link-color, 20%);
-	 	border-left-color: darken($link-color, 20%);
-		@include css-gradient(darken($link-color, 5%), darken($link-color, 10%));
+		color: $black;
+    background-color: darken($nice-blue, 25%);
+
 	}
 
 	&:active {
-		@include css-gradient(darken($link-color, 5%), $link-color);
+		@include css-gradient(darken($nice-blue, 5%), $nice-blue);
 	}
 }
 
