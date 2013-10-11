@@ -62,7 +62,7 @@
 
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
 					
-					<a href="<?php echo home_url(); ?>" rel="nofollow" class="h1"><?php bloginfo('name'); ?></a>
+					<a href="<?php echo home_url(); ?>" rel="nofollow" class="h2"><?php bloginfo('name'); ?></a>
 
 					<!-- if you'd like to use the site description you can un-comment it below -->
 					<?php // bloginfo('description'); ?>

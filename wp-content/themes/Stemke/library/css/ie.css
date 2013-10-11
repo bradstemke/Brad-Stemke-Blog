@@ -118,53 +118,53 @@ TYPOGRAPHY
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-/* line 132, ../scss/_mixins.scss */
+/* line 133, ../scss/_mixins.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic;
 }
 
-/* line 138, ../scss/_mixins.scss */
+/* line 139, ../scss/_mixins.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 139, ../scss/_mixins.scss */
+/* line 140, ../scss/_mixins.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 140, ../scss/_mixins.scss */
+/* line 141, ../scss/_mixins.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 144, ../scss/_mixins.scss */
+/* line 145, ../scss/_mixins.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
 }
 
-/* line 150, ../scss/_mixins.scss */
+/* line 151, ../scss/_mixins.scss */
 .alert-help {
   border-color: #e8dc59;
   background: #ebe16f;
 }
 
-/* line 156, ../scss/_mixins.scss */
+/* line 157, ../scss/_mixins.scss */
 .alert-info {
   border-color: #bfe4f4;
   background: #d5edf8;
 }
 
-/* line 162, ../scss/_mixins.scss */
+/* line 163, ../scss/_mixins.scss */
 .alert-error {
   border-color: #f8cdce;
   background: #fbe3e4;
 }
 
-/* line 168, ../scss/_mixins.scss */
+/* line 169, ../scss/_mixins.scss */
 .alert-success {
   border-color: #deeaae;
   background: #e6efc2;
@@ -194,7 +194,7 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-/* line 230, ../scss/_mixins.scss */
+/* line 231, ../scss/_mixins.scss */
 .button, .button:visited {
   font-family: "anonymous_proregular", Arial, sans-serif;
   border-bottom: 0;
@@ -216,12 +216,12 @@ BUTTONS
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-/* line 251, ../scss/_mixins.scss */
+/* line 252, ../scss/_mixins.scss */
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
   color: black;
   background-color: #16527a;
 }
-/* line 257, ../scss/_mixins.scss */
+/* line 258, ../scss/_mixins.scss */
 .button:active, .button:visited:active {
   background-color: #3498db;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#258cd1), to(#3498db));
@@ -231,7 +231,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #258cd1, #3498db);
 }
 
-/* line 262, ../scss/_mixins.scss */
+/* line 263, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
@@ -243,7 +243,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #1990db, #1681c4);
   box-shadow: inset 0 0 3px #59b3ec;
 }
-/* line 268, ../scss/_mixins.scss */
+/* line 269, ../scss/_mixins.scss */
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
   background-color: #1472ad;
@@ -253,7 +253,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #1784c9, #1472ad);
   background-image: linear-gradient(to bottom, #1784c9, #1472ad);
 }
-/* line 272, ../scss/_mixins.scss */
+/* line 273, ../scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
   background-color: #1990db;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
@@ -487,7 +487,7 @@ HEADER STYLES
 *********************/
 /* line 38, ../scss/_768up.scss */
 .header {
-  padding: 50px 0px;
+  padding: 1.5em 0;
 }
 
 /* line 47, ../scss/_768up.scss */
@@ -563,16 +563,17 @@ nav {
 /* line 103, ../scss/_768up.scss */
 .nav li a {
   border-bottom: 0;
+  color: #3498db;
   /*
   you can use hover styles here even though this size
   has the possibility of being a mobile device.
   */
 }
-/* line 110, ../scss/_768up.scss */
+/* line 111, ../scss/_768up.scss */
 .nav li a:hover:before, .nav li a:hover:after, .nav li a:focus, .nav li a:hover {
-  color: #444;
+  color: #3498db;
 }
-/* line 122, ../scss/_768up.scss */
+/* line 123, ../scss/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   margin-top: 0;
@@ -581,7 +582,7 @@ nav {
   z-index: 8999;
   /* highlight sub-menu current page */
 }
-/* line 128, ../scss/_768up.scss */
+/* line 129, ../scss/_768up.scss */
 .nav li ul.sub-menu li,
 .nav li ul.children li {
   /*
@@ -590,7 +591,7 @@ nav {
   for usability. k, bai.
   */
 }
-/* line 130, ../scss/_768up.scss */
+/* line 131, ../scss/_768up.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 10px;
@@ -599,12 +600,12 @@ nav {
   width: 180px;
   border-bottom: 1px solid #ccc;
 }
-/* line 147, ../scss/_768up.scss */
+/* line 148, ../scss/_768up.scss */
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 169, ../scss/_768up.scss */
+/* line 170, ../scss/_768up.scss */
 .nav li:hover ul {
   top: auto;
   display: block;
@@ -614,28 +615,28 @@ nav {
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 189, ../scss/_768up.scss */
+/* line 190, ../scss/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 193, ../scss/_768up.scss */
+/* line 194, ../scss/_768up.scss */
 .widgettitle {
   border-bottom: 1px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 198, ../scss/_768up.scss */
+/* line 199, ../scss/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 203, ../scss/_768up.scss */
+/* line 204, ../scss/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 211, ../scss/_768up.scss */
+/* line 212, ../scss/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -660,12 +661,12 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 318, ../scss/_768up.scss */
+/* line 319, ../scss/_768up.scss */
 .footer section img {
   text-align: center;
 }
 
-/* line 324, ../scss/_768up.scss */
+/* line 325, ../scss/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.

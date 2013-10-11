@@ -7,15 +7,13 @@
 					</nav>
 
 					<section class="fourcol first">
-						<p>Welcome to my lifestyle, coding, baking, everything blog.</p>
+						<p>This is my lifestyle, coding, baking, adventuring, music, everything blog.</p>
+						<p>Thanks for reading.</p>
 					</section>
 
-					<section class="fourcol">
-						<img src="<?php echo get_template_directory_uri(); ?>/library/images/wcradio-png.png" alt="radio" />
-					</section>
 
 					<section class="fourcol last">
-						<p>I created this theme, and it will probably keep changing.</p>
+						<p>I created this theme, and it will probably keep changing, because that's how it goes.</p>
 						<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 					</section>
 

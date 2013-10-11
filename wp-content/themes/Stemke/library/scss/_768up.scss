@@ -36,7 +36,7 @@ HEADER STYLES
 *********************/
 
 .header {
-	padding: 50px 0px;
+	padding: 1.5em 0;
 }
 
 	#logo {
@@ -102,13 +102,14 @@ nav {
 
 		a {
 			border-bottom: 0;
+			color: $nice-blue;
 
 			/*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
 			&:hover:before, &:hover:after, &:focus, &:hover {
-				color: #444;
+				color: $nice-blue;
 			}
 		}
 

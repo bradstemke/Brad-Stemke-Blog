@@ -83,7 +83,7 @@ a, a:visited {
 
 	/* on hover */
 	&:hover, &:focus {
-		color: lighten($link-color, 100%);
+		color: $nice-blue;
 		text-decoration: none;
 	}
 
@@ -131,8 +131,6 @@ h2, .h2 {
 	font-size: 2.75em;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
-	background-color: rgba($nice-blue, 0.7);
-	border-bottom: 3px solid lighten($nice-blue, 25%);
 }
 
 h3, .h3 {
@@ -160,14 +158,18 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $nice-blue;
-	border-bottom: 3px solid lighten($nice-blue, 25%);
+	background-color: $white;
+	.h2 {
+		color: $nice-blue;		
+	}
 }
 
 	#logo {}
 
 #inner-header {
-
+	.h2 {
+		border-bottom: 0;
+	}
 }
 /*********************
 NAVIGATION STYLES
@@ -255,7 +257,7 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	background: url(../images/squairy_light.png) repeat;
+	// background: url(../images/squairy_light.png) repeat;
 	padding-bottom: 2em;
 }
 
@@ -264,18 +266,7 @@ POSTS & CONTENT STYLES
 				margin-bottom: 0em;
 			}
 			header {
-				background-color: $nice-blue;
-				p {
-					padding-left: 1em;
-				}
-			}
-			.article-header  {
-				h1, h2, h3 {
-					padding-left: 0.25em;
-				}
-			}
-			.byline p {
-				padding-left: 0.25em;
+				background-color: $white;
 			}
 
 			footer {}
@@ -292,9 +283,8 @@ POSTS & CONTENT STYLES
 		.page-title {}
 
 		.archive-title {
-			span {
-				padding-left: 0.25em;
-			}
+			color: $nice-blue;
+			border-bottom: 2px solid $nice-blue;
 		}
 
 		/* want to style individual post classes? Booya! */
@@ -314,10 +304,8 @@ POSTS & CONTENT STYLES
 		}
 
 		/* entry content */
-		.entry-content {
-			padding: 1em;
-			background-color: rgba($nice-blue, 0.7);
-			border-bottom: 3px solid lighten($nice-blue, 25%);
+		.entry-content {			
+			border-bottom: 2px solid $nice-blue;
 			a {
 				font-weight: bold;
 			}
@@ -801,8 +789,14 @@ FOOTER STYLES
 .footer {
 	clear: both;
 	background-color: $white;
-	padding: 2em 0;
-	border-top: 3px solid lighten($nice-blue, 25%);
+	padding: 1em 0;
+	font-size: 0.75em;
+	section {
+		padding-bottom: 1em;
+	}
+	a {
+		font-weight: bold;
+	}
 }
 
 	/*
