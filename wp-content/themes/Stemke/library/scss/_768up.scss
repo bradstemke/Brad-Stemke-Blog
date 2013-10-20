@@ -23,9 +23,14 @@ body {
 /*********************
 LAYOUT & GRID STYLES
 *********************/
+#container {
+	max-width: 70em;
+	margin: 0 auto;
+}
+
 
 .wrap {
-	max-width: 1140px;
+	max-width: 75em;
 	width: 65%;
 	margin: 0 auto;
 
@@ -43,8 +48,8 @@ HEADER STYLES
 	}
 
 	#inner-header {
-
-		a {
+		
+		h1, a {
 			display: inline;
 		}
 	}

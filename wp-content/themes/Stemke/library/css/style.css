@@ -951,13 +951,13 @@ h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
 
 /* line 125, ../scss/_base.scss */
 h1, .h1 {
-  font-size: 4em;
-  line-height: 1em;
+  font-size: 2.5em;
+  line-height: 1.4em;
 }
 
 /* line 130, ../scss/_base.scss */
 h2, .h2 {
-  font-size: 2.75em;
+  font-size: 2em;
   line-height: 1.4em;
   margin-bottom: 0.375em;
 }
@@ -994,12 +994,12 @@ HEADER STYLES
   background-color: #ecf0f1;
 }
 /* line 162, ../scss/_base.scss */
-.header .h2 {
+.header h1, .header a {
   color: #3498db;
 }
 
 /* line 170, ../scss/_base.scss */
-#inner-header .h2 {
+#inner-header h1, #inner-header a {
   border-bottom: 0;
 }
 
@@ -1686,9 +1686,15 @@ you can add resource intensive styles.
   /*********************
   LAYOUT & GRID STYLES
   *********************/
-  /* line 27, ../scss/_768up.scss */
+  /* line 26, ../scss/_768up.scss */
+  #container {
+    max-width: 70em;
+    margin: 0 auto;
+  }
+
+  /* line 32, ../scss/_768up.scss */
   .wrap {
-    max-width: 1140px;
+    max-width: 75em;
     width: 65%;
     margin: 0 auto;
   }
@@ -1696,20 +1702,20 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
-  /* line 38, ../scss/_768up.scss */
+  /* line 43, ../scss/_768up.scss */
   .header {
     padding: 1.5em 0;
   }
 
-  /* line 47, ../scss/_768up.scss */
-  #inner-header a {
+  /* line 52, ../scss/_768up.scss */
+  #inner-header h1, #inner-header a {
     display: inline;
   }
 
   /*********************
   NAVIGATION STYLES
   *********************/
-  /* line 55, ../scss/_768up.scss */
+  /* line 60, ../scss/_768up.scss */
   .hover-effect a::before,
   .hover-effect a::after {
     display: inline-block;
@@ -1719,7 +1725,7 @@ you can add resource intensive styles.
     transition: transform 0.3s, opacity 0.2s;
   }
 
-  /* line 63, ../scss/_768up.scss */
+  /* line 68, ../scss/_768up.scss */
   .hover-effect a::before {
     margin-right: 10px;
     content: '[';
@@ -1728,7 +1734,7 @@ you can add resource intensive styles.
     transform: translateX(20px);
   }
 
-  /* line 71, ../scss/_768up.scss */
+  /* line 76, ../scss/_768up.scss */
   .hover-effect a::after {
     margin-left: 10px;
     content: ']';
@@ -1737,7 +1743,7 @@ you can add resource intensive styles.
     transform: translateX(-20px);
   }
 
-  /* line 82, ../scss/_768up.scss */
+  /* line 87, ../scss/_768up.scss */
   .hover-effect a:hover::before,
   .hover-effect a:hover::after,
   .hover-effect a:focus::before,
@@ -1748,12 +1754,12 @@ you can add resource intensive styles.
     transform: translateX(0px);
   }
 
-  /* line 89, ../scss/_768up.scss */
+  /* line 94, ../scss/_768up.scss */
   nav {
     display: inline;
   }
 
-  /* line 93, ../scss/_768up.scss */
+  /* line 98, ../scss/_768up.scss */
   .nav {
     background: rgba(52, 152, 219, 0);
     float: right;
@@ -1761,7 +1767,7 @@ you can add resource intensive styles.
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 98, ../scss/_768up.scss */
+  /* line 103, ../scss/_768up.scss */
   .nav li {
     float: left;
     position: relative;
@@ -1771,7 +1777,7 @@ you can add resource intensive styles.
     */
     /* showing sub-menus */
   }
-  /* line 103, ../scss/_768up.scss */
+  /* line 108, ../scss/_768up.scss */
   .nav li a {
     border-bottom: 0;
     color: #3498db;
@@ -1780,11 +1786,11 @@ you can add resource intensive styles.
     has the possibility of being a mobile device.
     */
   }
-  /* line 111, ../scss/_768up.scss */
+  /* line 116, ../scss/_768up.scss */
   .nav li a:hover:before, .nav li a:hover:after, .nav li a:focus, .nav li a:hover {
     color: #3498db;
   }
-  /* line 123, ../scss/_768up.scss */
+  /* line 128, ../scss/_768up.scss */
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
@@ -1793,7 +1799,7 @@ you can add resource intensive styles.
     z-index: 8999;
     /* highlight sub-menu current page */
   }
-  /* line 129, ../scss/_768up.scss */
+  /* line 134, ../scss/_768up.scss */
   .nav li ul.sub-menu li,
   .nav li ul.children li {
     /*
@@ -1802,7 +1808,7 @@ you can add resource intensive styles.
     for usability. k, bai.
     */
   }
-  /* line 131, ../scss/_768up.scss */
+  /* line 136, ../scss/_768up.scss */
   .nav li ul.sub-menu li a,
   .nav li ul.children li a {
     padding-left: 10px;
@@ -1811,12 +1817,12 @@ you can add resource intensive styles.
     width: 180px;
     border-bottom: 1px solid #ccc;
   }
-  /* line 148, ../scss/_768up.scss */
+  /* line 153, ../scss/_768up.scss */
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
     border-bottom: 0;
   }
-  /* line 170, ../scss/_768up.scss */
+  /* line 175, ../scss/_768up.scss */
   .nav li:hover ul {
     top: auto;
     display: block;
@@ -1826,28 +1832,28 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 190, ../scss/_768up.scss */
+  /* line 195, ../scss/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 194, ../scss/_768up.scss */
+  /* line 199, ../scss/_768up.scss */
   .widgettitle {
     border-bottom: 1px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 199, ../scss/_768up.scss */
+  /* line 204, ../scss/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 204, ../scss/_768up.scss */
+  /* line 209, ../scss/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 212, ../scss/_768up.scss */
+  /* line 217, ../scss/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
@@ -1872,12 +1878,12 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 319, ../scss/_768up.scss */
+  /* line 324, ../scss/_768up.scss */
   .footer section img {
     text-align: center;
   }
 
-  /* line 325, ../scss/_768up.scss */
+  /* line 330, ../scss/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.

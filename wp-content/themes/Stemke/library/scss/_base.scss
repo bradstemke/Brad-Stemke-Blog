@@ -123,12 +123,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 4em;
-	line-height: 1em;
+	font-size: 2.5em;
+	line-height: 1.4em;
 }
 
 h2, .h2 {
-	font-size: 2.75em;
+	font-size: 2em;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
 }
@@ -159,15 +159,15 @@ HEADER STYLES
 
 .header {
 	background-color: $white;
-	.h2 {
-		color: $nice-blue;		
+	h1, a {
+		color: $nice-blue;
 	}
 }
 
 	#logo {}
 
 #inner-header {
-	.h2 {
+	h1, a {
 		border-bottom: 0;
 	}
 }
