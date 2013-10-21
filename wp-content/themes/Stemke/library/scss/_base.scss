@@ -20,7 +20,7 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: #565656;
-	background-color: $white;
+	background-color: $bg-white;
 }
 
 /********************
@@ -157,8 +157,7 @@ p {
 HEADER STYLES
 *********************/
 
-.header {
-	background-color: $white;
+.header {	
 	h1, a {
 		color: $nice-blue;
 	}
@@ -266,7 +265,7 @@ POSTS & CONTENT STYLES
 				margin-bottom: 0em;
 			}
 			header {
-				background-color: $white;
+				
 			}
 
 			footer {}
@@ -299,6 +298,7 @@ POSTS & CONTENT STYLES
 
 		/* post meta */
 		.byline {
+			margin-top: 1em;
 			color: $link-color;
 			time {}
 		}
@@ -310,9 +310,8 @@ POSTS & CONTENT STYLES
 				font-weight: bold;
 			}
 
-			p {}
-
-
+			p { }
+	
 			ul, ol, table, dl {}
 
 			ul, ol {
@@ -788,7 +787,6 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background-color: $white;
 	padding: 1em 0;
 	font-size: 0.75em;
 	section {

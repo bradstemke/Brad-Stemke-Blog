@@ -57,7 +57,8 @@ $alert-green:       #e6efc2;
 $alert-blue:        #d5edf8;
 
 $black:             #000;
-$white:             rgba(236, 240, 241,1.0);
+$white:             rgb(236, 240, 241);
+$bg-white:          lighten($white, 25%);
 
 $bones-pink:        #f01d4f;
 $bones-blue:        #1990db;
